@@ -1,0 +1,422 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body{
+    background-color: rgb(245, 235, 220);
+    height: 2542px;
+}
+button{
+    background-color: #D62300;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-weight: 100;
+    font-family: 'Flame-Regular', sans-serif;
+    font-size: 12px;
+    color: rgb(245, 235, 220);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Flame', sans-serif;
+    width: 108.75px;
+    border-radius: 9999px;
+}
+@font-face {
+    font-family: 'Flame-Regular';
+    src: url(contents/Flame-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'Flame-Bold';
+    src: url(contents/Flame-Bold.woff) format('woff');
+}
+@font-face {
+    font-family: 'Flame-Sans';
+    src: url(contents/Flame\ Sans.woff) format('woff');
+}
+.nav-top{
+    width: 100%;
+    height: 56px;
+    background-color: rgb(245, 235, 220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px  rgba(128, 128, 128, 0.425);
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+}
+.nav-box{
+    width: 78vw;
+    display: flex;
+    align-items: center;
+    margin-left: 19px;
+}
+.nav-box> :nth-child(1){
+    display: flex;
+    width: 51.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-box> :nth-child(2){
+    display: flex;
+    width: 48.5%;
+    justify-content: right;
+    align-items: center;
+}
+.first-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 382.6px;
+    z-index: 0;
+    position: absolute;
+    top: 56px;
+    z-index: -1;
+}
+.first-sec> :nth-child(1){
+    display: flex;
+    flex-direction: row;
+    margin-right: 151px;
+    margin-left: 168px;
+}
+.first-sec-left{
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 59.7%;
+}
+.first-sec-left> :nth-child(1){
+    width: 70%;
+    height: 50%;
+    font-family: 'Flame-Bold',sans-serif;
+    color: #502314;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.first-sec-left> :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+.first-sec-right{
+    width: 100%;
+
+}
+.first-sec-left> :nth-child(2)> button{
+    width: 300px;
+    height: 55px;
+    font-size: 18px;
+}
+.first-sec-left> :nth-child(2)> :nth-child(1){
+    color: #ffff;
+    margin-top: 16px;
+    border: none;
+    gap: 10px;
+}
+.first-sec-left> :nth-child(2)> :nth-child(2){
+    background-color:  rgb(245, 235, 220);
+    margin-top: 16px;
+    border: 1px solid #D62300;
+    color: #D62300;
+    gap: 9px;
+}
+.grid-section{
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 438.6px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1057.2px;
+}
+.grid-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-left: 168px;
+    margin-right: 168px;
+    justify-content: space-between;
+    padding: 4px;
+    margin-top: -10px;
+}
+.grid-box img{
+    width: 100%;
+    height: 100%;
+}
+.grid-box> div{
+    height: 496.6px;
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.566);
+}
+.grid-box> :nth-child(1) , .grid-box> :nth-child(2){
+    margin-top: 30px;
+}
+.img-div{
+    width: 580px;
+}
+.des-div{
+    background-color: white;
+    height: 166.600px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    color: #502314ef;
+}
+.grid-box h2{
+    font-family: 'Flame-Regular', sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.des-div> :nth-child(2){    
+    font-family: 'Flame-Sans', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+}
+.des-div> :nth-child(3){
+    font-family: 'Flame-Sans', sans-serif;
+    font-size: 13px;
+    text-decoration: underline;
+    color: #502314;
+    position: absolute;
+    left: 20px;
+    top: 110px;
+}
+.grid-button{
+    width: 100%;
+}
+.grid-button> button{
+    height: 38.6px;
+    font-size: 14px;
+    background-color:  white;
+    border: 1px solid #D62300;
+    color: #D62300;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.reward-section{
+    justify-content: center;
+    position: absolute;
+    top: 1528px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+}
+.reward-section> div{
+    width: 100%;
+    height: 100%;
+    margin-left: 168px;
+    margin-right: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reward-header{
+    width: 1151.2px;
+    height: 10%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.reward-header> :nth-child(1){
+    font-size: 30px;
+    color: #502314ef;
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    left: 700px;
+}
+.reward-header> :nth-child(2){
+    font-family: 'Flame-Sans', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #502314ef;
+    position: absolute;
+    right: 220px;
+}
+.reward-header> :nth-child(3){
+    height: 20px;
+    width: 12px;
+    position: absolute;
+    right: 190px;
+}
+.reward-content{
+    width: 1151.2px;
+    margin-left: 15px;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.reward-content> :nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.reward-content> :nth-child(2){
+    width: 1070px;
+}
+.reward-content> :nth-child(3){
+    display: flex;
+    align-items: center;
+}
+.reward-content button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(245, 235, 220);
+    border-radius: 50%;
+    border: 1px solid;
+}
+.reward-food{
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:25px;
+    align-items: center;
+}
+.reward-food> div{
+    width: 160px;
+    height: 238px;
+    overflow: hidden;
+}
+.reward-food-img{
+    width: 80%;
+    height: 126px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.reward-food-header{
+    width: 95%;
+    height: 65px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 18px;
+    font-family: 'Flame-Regular', sans-serif;
+    color: #502314ef;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.reward-food-des{
+    width: 90%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Flame-Regular', sans-serif;
+    color: #502314ef;
+}
+.reward-food-des> img{
+    width: 16px;
+    height: 16px;
+}
+.final-section{
+    background-color: rgba(0, 0, 0, 0.04);
+    justify-content: center;
+    height: 432px;
+    position: absolute;
+    top: 1990px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.final-section-img{
+    margin-right: 692px;
+    position: absolute;
+    width: 436.5px;
+    top: -43px;
+}
+.final-section> div{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: right;
+}
+.final-section-des{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+} 
+.final-section-des> :nth-child(1){
+    font-family: 'Flame-Bold',sans-serif;
+    color: #502314;
+    font-size: 48px;    
+    margin-top: 48px;
+    line-height: 54.3px;
+}
+.final-section-des> :nth-child(2){
+    margin-top: 32px;
+    
+}
+.final-section-des> :nth-child(3){
+    font-family: 'Flame-Sans', sans-serif;
+    font-size: 13.9px;
+    font-weight: 500;
+    color: #502314;
+    width: 600px;
+    line-height: 24px;
+    margin-top: 33px;
+}
+.last-banner{
+    width: 100%;
+    height: 56px;
+    background-color: #502314;
+    position: absolute;
+    top: 2422px;
+    color: rgb(245, 235, 220);
+    font-size: 12px;
+    font-family: 'Flame-Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bottom{
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0px -1px  rgba(128, 128, 128, 0.425);
+    background-color: rgb(245, 235, 220);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+    margin-left: 8px;
+}
+.nav-bottom> div{
+    display: flex;
+    flex-direction: column;
+    width: 31px;
+    height: 30px;
+    font-size: 12px;
+    font-family: 'Flame-Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+    
+
